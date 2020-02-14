@@ -6,5 +6,10 @@ class Post
     save
   end
   
+  @@all = []
+  
   def save
-    
+    @@all << self
+  end
+  
+  
