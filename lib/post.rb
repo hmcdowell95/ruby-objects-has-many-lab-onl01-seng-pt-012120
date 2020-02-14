@@ -24,7 +24,16 @@ class Post
     end
   end
   
-  
+  def self.count_authors
+    z = []
+    @@all.each do |x|
+      if x.author == nil 
+      else 
+        z << x
+      end
+    end
+    z.length 
+  end
   
 end
   
