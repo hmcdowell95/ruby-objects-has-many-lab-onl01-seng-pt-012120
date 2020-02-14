@@ -6,4 +6,4 @@ class Author
   end
   
   def posts 
-    Post.all.select {
+    Post.all.select {|x| 
